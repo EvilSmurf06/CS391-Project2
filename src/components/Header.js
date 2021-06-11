@@ -2,16 +2,11 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import HeadsetIcon from '@material-ui/icons/Headset';
 import { NavLink } from 'react-router-dom'
 import '../App.css';
 
 class Header extends React.Component
 {
-    constructor(props)
-    {
-        super(props);
-    }
 
     render()
     {
