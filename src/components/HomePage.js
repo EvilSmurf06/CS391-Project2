@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import { Button } from 'reactstrap';
 import './Main.css';
 
 function HomePage() {
