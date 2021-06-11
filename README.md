@@ -12,7 +12,7 @@ _User can listen to soundtracks and get information about the most popular games
 
 **_The event that started the use case_**
 
-_First the json server has to be started, after than the project has to be started using npm start, that will open the home page. _
+First the json server has to be started, after than the project has to be started using npm start, that will open the home page.
 
 **_Usage Scenario_**
 
