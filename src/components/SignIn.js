@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import axios from 'axios'
 import game from '../../src/images/Game.png';
 import {CardImg} from 'reactstrap';
+import '../css/Page.css';
 class SignIn extends React.Component {
     constructor(props)
     {
@@ -42,7 +43,7 @@ class SignIn extends React.Component {
                 this.props.history.push('/gamepage')
             }
             else
-                document.getElementById("4").removeAttribute("hidden")
+                document.getElementById("pass").removeAttribute("hidden")
     })
 }
 
@@ -54,7 +55,7 @@ class SignIn extends React.Component {
       <CardImg variant="top" src={game} />
               </div>
             <div className="col-sm-4">
-                 <p id = "4" hidden = {true} style = {{color:'red'}}>Wrong mail or password</p>
+                 <p id = "pass" hidden = {true} className="pass">Wrong mail or password</p>
             <Form onSubmit = {this.submitHandler}>
                 <Form.Group controlId="formBasicText">
                     <Form.Label><i>E-Mail</i></Form.Label>

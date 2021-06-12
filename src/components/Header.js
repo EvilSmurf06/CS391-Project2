@@ -1,45 +1,79 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { NavLink } from 'react-router-dom'
+import {
+  NavDropdown,
+  Nav,
+  Navbar
+} from 'react-bootstrap/';
+import {
+  NavLink
+} from 'react-router-dom'
 import '../App.css';
 
-class Header extends React.Component
-{
+class Header extends React.Component {
 
-    render()
-    {
-        return (
-            <Navbar bg="dark" variant="dark">
-                <NavLink to="/home" className="brand" style={{color: 'white'}}><i>FUVU</i></NavLink>
-                <Nav className="ms-auto">
-                      {
-                      this.props.loggedInStatus === "LOGGED_IN"
-                      ?  <> <NavLink to="/tps" className="btn" style={{color: '#f0ece2'}}><i>TPS</i></NavLink>
-                        <NavDropdown.Divider />
-                        <NavLink to="/rts" className="btn" style={{color: '#a7ff83'}}><i>RTS</i></NavLink>
-                        <NavDropdown.Divider />
-                        <NavLink to="/openworld" className="btn" style={{color: '#ffe2e2'}}><i>Open World</i></NavLink>
-                        <NavDropdown.Divider />
-                        <NavLink to="/battlearena" className="btn" style={{color: '#1fab89'}}><i>MOBA</i></NavLink>
-                        <NavDropdown.Divider />
-                        <NavLink to="/battleroyale" className="btn" style={{color: '#ffd460'}}><i>Battle Royale</i></NavLink>
-                        <NavDropdown.Divider />
-                        <NavLink to="/fps" className="btn" style={{color: '#7c7575'}}><i>FPS</i></NavLink>
-                        <NavDropdown.Divider /></>
-                        : null
-                      }
-                    {
-                    this.props.loggedInStatus === "NOT_LOGGED_IN"
-                    ? <><NavLink to="/sign-in" className="btn" style={{color: 'white'}}>Sign In</NavLink>
-                    <NavLink to="/sign-up" className="btn" style={{color: 'white'}}>Sign Up</NavLink></>
-                    : null
-                    }
-                </Nav>
-            </Navbar>
-        );
-    }
+  render() {
+    return (
+
+      <
+      Navbar bg = "dark"
+      variant = "dark" >
+      <
+      Nav className = "ms-auto" > {
+        this.props.loggedInStatus === "LOGGED_IN" ?
+        <
+        > < NavLink to = "/gamepage"
+        className = "btn " > < i className = "categories" > Game Categories < /i></NavLink >
+        <
+        NavDropdown.Divider / >
+        <
+        NavLink to = "/tps"
+        className = "btn " > < i className = "tps" > TPS < /i></NavLink >
+        <
+        NavDropdown.Divider / >
+        <
+        NavLink to = "/rts"
+        className = "btn " > < i className = "rts" > RTS < /i></NavLink >
+        <
+        NavDropdown.Divider / >
+        <
+        NavLink to = "/openworld"
+        className = "btn " > < i className = "openw" > Open World < /i></NavLink >
+        <
+        NavDropdown.Divider / >
+        <
+        NavLink to = "/battlearena"
+        className = "btn " > < i className = "moba" > MOBA < /i></NavLink >
+        <
+        NavDropdown.Divider / >
+        <
+        NavLink to = "/battleroyale"
+        className = "btn " > < i className = "battleroyale" > Battle Royale < /i></NavLink >
+        <
+        NavDropdown.Divider / >
+        <
+        NavLink to = "/fps"
+        className = "btn " > < i className = "fps" > FPS < /i></NavLink >
+        <
+        NavDropdown.Divider / >
+        <
+        /> :
+        null
+      } {
+        this.props.loggedInStatus === "NOT_LOGGED_IN" ?
+          <
+          > < NavLink to = "/home"
+        className = "btn brand" > < i className = "home" > FUVU < /i></NavLink >
+          <
+          NavLink to = "/sign-in"
+        className = "btn" > < i className = "sign-in" > Sign In < /i></NavLink >
+          <
+          NavLink to = "/sign-up"
+        className = "btn" > < i className = "sign-up" > Sign Up < /i></NavLink > < />: null
+      } <
+      /Nav> < /
+      Navbar >
+    );
+  }
 }
 
 export default Header;

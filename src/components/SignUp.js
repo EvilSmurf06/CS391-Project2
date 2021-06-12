@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import axios from 'axios'
 import {CardImg} from 'reactstrap';
 import game from '../../src/images/Register-img.png';
-
+import '../css/Page.css';
 class SignUp extends React.Component {
     constructor(props)
     {
@@ -66,7 +66,7 @@ class SignUp extends React.Component {
                 this.props.history.push('/sign-in')
             }
             else
-                 document.getElementById("4").removeAttribute("hidden")
+                 document.getElementById("username").removeAttribute("hidden")
 
           })
     }
@@ -79,7 +79,7 @@ render() {
   <CardImg variant="top" src={game} />
           </div>
         <div className="col-sm-6">
-            <p id = "4" hidden = "true" style = {{color:'red'}}>Email or username already exists</p>
+            <p id = "username" hidden = "true" className="username">Email or username already exists</p>
         <Form onSubmit = {this.submitHandler}>
             <Form.Group controlId="formBasicText">
                 <Form.Label><i>Username</i></Form.Label>

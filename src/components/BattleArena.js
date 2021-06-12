@@ -1,5 +1,5 @@
 import React from 'react'
-import './Page.css';
+import '../css/Page.css';
 import ReactAudioPlayer from 'react-audio-player';
 import {
 Card,  CardImg, CardText, CardBody,
