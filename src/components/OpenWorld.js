@@ -15,7 +15,7 @@ import gta from '../../src/images/gta5.jpg';
 
 import rd1 from '../../src/mp3/dangelo-unshaken-audio.mp3';
 import sleepingD1 from '../../src/mp3/sleeping-dogs.mp3';
-import watchD1 from '../../src/mp3/watch-dogs.mp3';
+import watchD1 from '../../src/mp3/watch dogs.mp3';
 import gta1 from '../../src/mp3/gta5.mp3';
 
 
