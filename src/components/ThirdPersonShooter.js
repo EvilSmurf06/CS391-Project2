@@ -14,7 +14,7 @@ import lou from '../../src/images/the-last-of-us.jpg';
 import gow from '../../src/images/gears-of-war.jpg';
 
 import maxPayne1 from '../../src/mp3/max-payne-2-main-theme.mp3';
-import gow3 from '../../src/mp3/god-ofwar ost.mp3';
+import gow3 from '../../src/mp3/god of war ost.mp3';
 import lou1 from '../../src/mp3/the-last-of-us-theme-song.mp3';
 import gow1 from '../../src/mp3/gears-of-war.mp3';
 
