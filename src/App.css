@@ -4,17 +4,40 @@
   min-height: 100vh;
 }
 .footer{
-  color: white;
-  background-color: #355c7d;
-  padding-top: 3em;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  flex-shrink: 0;
   text-align: center;
+  background-color: #7952b3;
+  color: white;
+  height: 80px;
+  border: 1px solid black;
 }
 .content-wrap{
   flex: 1;
 }
 .brand{
-  background-color: blue;
+color: blue;
+}
+.categories{
+  color: #ffd460;
+}
+.tps{
+color: #f0ece2;
+}
+.rts{
+color: #a7ff83;
+}
+.fps{
+color: #ffe2e2;
+}
+.moba{
+color: #1fab89;
+}
+.battleroyale{
+color: #ffd460;
+}
+.openw{
+color: #7c7575;
+}
+.sign-in,.sign-up,.home{
+  color:white;
 }
